@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    .box{
+        height: 100px;
+        width: 200px;
+        background-color: aqua;
+    }
+    .box1{
+        height: 100px;
+        width: 200px;
+        /* background-color: blue; */
+        animation: box1 5s linear infinite;
+    }
+    @keyframes box1 {
+        from{
+            transform: translateX(-500px);
+        }
+        to{
+            transform: translateX(1200px);
+        }
+    }
+    
+ </style>
+<body>
+    <div class="box"></div>
+    <!-- <div class="box1"></div> -->
+    <img src="./image/cartoon-removebg-preview.png" width="200" height="200" class="box1"/>
+</body>
+</html>
