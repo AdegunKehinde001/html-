@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-positioning</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 120px;
+        }
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: blue;
+            color: white;
+            padding: 10%;
+        }
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: green;
+            color: white;
+            padding: 10%;
+        }
+        .static {
+            position: static;
+            background-color: yellow;
+            color: black;
+            padding: 10%;
+        }
+        .sticky {
+            position: sticky;
+            top: 35%;
+            background-color: purple;
+            color: white;
+            padding: 5%;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="fixed">fixed</div>
+    <div class="absolute">absolute</div>
+    <div class="relative">relative</div>
+    <div class="sticky">sticky</div>
+        <div class="static">static</div>
+    </div>
+</body>
+</html>

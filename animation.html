@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(1030px);
+    }
+}
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: moveBox 2s linear infinite;
+        overflow-x: hidden;
+    }
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation: moveBox2 2s linear infinite reverse;
+    }
+    @keyframes moveBox2 {
+        from {
+            transform: translateX(1400px);
+        }
+
+        to {
+            transform: translateX(-330px);
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>
